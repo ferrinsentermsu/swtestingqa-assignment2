@@ -1,5 +1,7 @@
 # Ferrin Senter (fas96) SW Testing and QA Assignment 2
 
+from app import app
+
 # main driver function
 def main():
     # greeting

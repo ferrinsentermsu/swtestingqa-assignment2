@@ -7,17 +7,27 @@
     <body>
         <h1>BMI Calculator</h1>
     <div>
-        <form>
+        <form action="/" method="POST">
             <label for="userFeet">Feet:</label>
-            <input type="feet">
+            <input type="text" name="userFeet">
             <br>
             <label for="userInches">Inches:</label>
-            <input type="inches">
+            <input type="text" name="userInches">
             <br>
             <label for="userPounds">Weight(in pounds):             </label>
-            <input type="pounds">
+            <input type="text" name="userPounds">
+            <br>
+            <button type="submit" value="submit">Calculate</button>
         </form>
         
+        {%if bmi%}
+        <p>Your BMI is {{bmi}}</p>
+        {%endif%}
+
+        {%if category%}
+        <p>Your classfication is {{category}}</p>
+        {%endif%}
+
     </div>
     </body>
 </html>
